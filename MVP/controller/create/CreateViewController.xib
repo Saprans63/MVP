@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CreateViewController" customModule="MVP" customModuleProvider="target">
+            <connections>
+                <outlet property="bodyText" destination="cD5-Q2-EdC" id="85W-rF-lxE"/>
+                <outlet property="titleText" destination="hnL-m2-kWh" id="yQE-UI-Yhq"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Title" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hnL-m2-kWh">
+                    <rect key="frame" x="20" y="64" width="374" height="34"/>
+                    <color key="backgroundColor" systemColor="systemGray5Color"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Body" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cD5-Q2-EdC">
+                    <rect key="frame" x="20" y="118" width="374" height="34"/>
+                    <color key="backgroundColor" systemColor="systemGray5Color"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wZo-xA-o98">
+                    <rect key="frame" x="150" y="172" width="114" height="40"/>
+                    <color key="backgroundColor" systemColor="systemBlueColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="r3F-OO-aR5"/>
+                    </constraints>
+                    <state key="normal" title="Create">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="AddButton:" destination="-1" eventType="touchUpInside" id="0Q7-OU-UQj"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="cD5-Q2-EdC" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="9pD-Zu-hNa"/>
+                <constraint firstItem="wZo-xA-o98" firstAttribute="top" secondItem="cD5-Q2-EdC" secondAttribute="bottom" constant="20" id="AwD-W7-GOo"/>
+                <constraint firstItem="hnL-m2-kWh" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="Ftt-by-Owr"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="hnL-m2-kWh" secondAttribute="trailing" constant="20" id="HY8-xH-zeK"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="cD5-Q2-EdC" secondAttribute="trailing" constant="20" id="Y3M-JE-Q4g"/>
+                <constraint firstItem="cD5-Q2-EdC" firstAttribute="top" secondItem="hnL-m2-kWh" secondAttribute="bottom" constant="20" id="cx0-Cx-KZi"/>
+                <constraint firstItem="wZo-xA-o98" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="150" id="gSl-X4-DX9"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="wZo-xA-o98" secondAttribute="trailing" constant="150" id="pBJ-AG-yzE"/>
+                <constraint firstItem="hnL-m2-kWh" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="20" id="xNl-ja-yAC"/>
+            </constraints>
+            <point key="canvasLocation" x="132" y="65"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBlueColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGray5Color">
+            <color red="0.89803921568627454" green="0.89803921568627454" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
